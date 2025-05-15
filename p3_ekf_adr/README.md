@@ -12,9 +12,9 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
     Alta incertidumbre en el modelo de movimiento (R ×10: proc_noise_std = [0.02,0.02,0.01]).
         El filtro desconfía de su propia predicción y se fía casi exclusivamente de la observación. La trayectoria azul casi coincide con la roja y se pega de cerca a la verde, reacciona muy rápido a cada medición. Sigue muy fiel los datos de los sensores.
 
-![Caso base](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/CasoBase3d.png)
-![Alta incertidumbre en la observación 3D](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/RuidoAltoMedida3d.png)
-![Alta incertidumbre en el modelo de movimiento 3D](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/RuidoAltoProceso3d.png)
+![Caso base](/p3_ekf_RBL/Capturas/CasoBase3d.png)
+![Alta incertidumbre en la observación 3D](p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoMedida3d.png)
+![Alta incertidumbre en el modelo de movimiento 3D](p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoProceso3d.png)
 
 --Modelo 3D:
 
@@ -33,9 +33,9 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
     El EKF 7D suele ser más preciso y estable en entornos reales donde la dinámica no es tan ideal. Reacciona mejor a cambios rápidos de dinámica,
     y suaviza mejor las transiciones de velocidad o aceleración.
 
-![Caso base](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/CasoBase7d.png)
-![Alta incertidumbre en la observación 7D](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/RuidoAltoMedida7d.png)
-![Alta incertidumbre en el modelo de movimiento 7D](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/RuidoAltoProceso7d.png)
+![Caso base](/p3_ekf_RBL/Capturas/CasoBase7d.png)
+![Alta incertidumbre en la observación 7D](/p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoMedida7d.png)
+![Alta incertidumbre en el modelo de movimiento 7D](p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoProceso7d.png)
 
 --Modelo 8D:
 
@@ -59,9 +59,9 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
     -Una fusión más completa de las lecturas de acelerómetro y giroscopio, mejorando la precisión de la orientación y la dinámica.
     -Mayor capacidad para seguir trayectorias donde el robot no se mueve alineado con los ejes globales.  
 
-![Caso base](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/CasoBase8d.png)
-![Alta incertidumbre en la observación 38](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/RuidoAltoMedida8d.png)
-![Alta incertidumbre en el modelo de movimiento 8D](/home/rafab03/AdR/src/p3_ws/p3_ekf_adr/p3_ekf_adr/Capturas/RuidoAltoProceso8d.png)
+![Caso base](/p3_ekf_RBL/Capturas/CasoBase8d.png)
+![Alta incertidumbre en la observación 38](/p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoMedida8d.png)
+![Alta incertidumbre en el modelo de movimiento 8D](/p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoProceso8d.png)
     
 
 
