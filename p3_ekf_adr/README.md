@@ -12,7 +12,7 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
     Alta incertidumbre en el modelo de movimiento (R ×10: proc_noise_std = [0.02,0.02,0.01]).
         El filtro desconfía de su propia predicción y se fía casi exclusivamente de la observación. La trayectoria azul casi coincide con la roja y se pega de cerca a la verde, reacciona muy rápido a cada medición. Sigue muy fiel los datos de los sensores.
 
-![Caso base](/p3_ekf_RBL/Capturas/CasoBase3d.png)
+![Caso base](/p3_ekf_RBL/p3_ekf_adr/Capturas/CasoBase3d.png)
 ![Alta incertidumbre en la observación 3D](p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoMedida3d.png)
 ![Alta incertidumbre en el modelo de movimiento 3D](p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoProceso3d.png)
 
@@ -33,7 +33,7 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
     El EKF 7D suele ser más preciso y estable en entornos reales donde la dinámica no es tan ideal. Reacciona mejor a cambios rápidos de dinámica,
     y suaviza mejor las transiciones de velocidad o aceleración.
 
-![Caso base](/p3_ekf_RBL/Capturas/CasoBase7d.png)
+![Caso base](/p3_ekf_RBL/p3_ekf_adr/Capturas/CasoBase7d.png)
 ![Alta incertidumbre en la observación 7D](/p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoMedida7d.png)
 ![Alta incertidumbre en el modelo de movimiento 7D](p3_ekf_RBL/p3_ekf_adr/Capturas/RuidoAltoProceso7d.png)
 
