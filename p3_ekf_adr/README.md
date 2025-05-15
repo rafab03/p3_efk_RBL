@@ -16,7 +16,7 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
 ![Alta incertidumbre en la observación 3D](/p3_ekf_adr/Capturas/RuidoAltoMedida3d.png)
 ![Alta incertidumbre en el modelo de movimiento 3D](/p3_ekf_adr/Capturas/RuidoAltoProceso3d.png)
 
---Modelo 3D:
+--Modelo 7D:
 
     Caso base (proc_noise_std = [0.1, 0.1, 0.05, 0.1, 0.1, 0.1, 0.1], obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507e-06, 0.0015387262937311438, 0.0015387262937311438]).
 
@@ -59,7 +59,7 @@ En este README se explicarán cómo los diferentes niveles de ruido influyen en 
     -Una fusión más completa de las lecturas de acelerómetro y giroscopio, mejorando la precisión de la orientación y la dinámica.
     -Mayor capacidad para seguir trayectorias donde el robot no se mueve alineado con los ejes globales.  
 
-![Caso base](/Capturas/CasoBase8d.png)
+![Caso base](/p3_ekf_adr/Capturas/CasoBase8d.png)
 ![Alta incertidumbre en la observación 38](/p3_ekf_adr/Capturas/RuidoAltoMedida8d.png)
 ![Alta incertidumbre en el modelo de movimiento 8D](/p3_ekf_adr/Capturas/RuidoAltoProceso8d.png)
     
