@@ -143,8 +143,7 @@ class KalmanFilterBaseNode(Node):
         self.mu, self.Sigma = self.kf.predict(self.u, dt)
         self.prev_time = curr_time
 
-        print(f"[PREDICT] u = {self.u}, dt = {dt}, mu = {self.mu}")
-
+        print(f"[PREDICT] u = {self.u}, dt = {dt}, mu = {self.mu}, ")
         # Extract real position
         pose = odom_to_pose2D(msg)
 

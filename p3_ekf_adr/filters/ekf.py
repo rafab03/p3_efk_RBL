@@ -2,13 +2,15 @@
 import numpy as np
 
 import time
+from p3_ekf_adr.motion_models.velocity_motion_models import velocity_motion_model_linearized
+from p3_ekf_adr.observation_models.odometry_observation_models import odometry_observation_model_linearized
 
 class ExtendedKalmanFilter:
 
 	def __init__(self, initial_state, initial_covariance, motion_model, observation_model, **kwargs):
 		# Process arguments
-		proc_noise_std = kwargs.get('proc_noise_std', [0.02, 0.02, 0.01])
-		obs_noise_std = kwargs.get('obs_noise_std', [0.02, 0.02, 0.01])
+		proc_noise_std = kwargs.get('proc_noise_std', len(initial_state) * [0.01])
+		obs_noise_std = kwargs.get('obs_noise_std', len(initial_state) * [0.01])
 
 		self.mu = initial_state # Initial state estimate 
 		self.Sigma = initial_covariance # Initial uncertainty
@@ -35,13 +37,21 @@ class ExtendedKalmanFilter:
 		start_time = time.time()
         # === TODO: Implement the EKF prediction step ===
 
-        # 1. Predict the new mean using motion model g
+		start_time = time.time()
 
-        # 2. Compute the Jacobian of the motion model G_t
+		# 1. Compute the state transition function g(mu, u, dt)
+		self.mu = self.g(self.mu, u, dt)
+		print("mu despiues prediccion: ", self.mu)
+		# 2. Compute the Jacobian of g with respect to the state mu (G)
+		G_t = self.G(self.mu, u, dt)
+		# 3. Compute the Jacobian of g with respect to the control u (V)
+		V = self.V(self.mu, u, dt)
 
-        # 3. Update the covariance
+		self.Sigma = G_t @ self.Sigma @ G_t.T + self.R
 
-        # ===============================================
+
+
+
 
 		end_time = time.time()
 		execution_time = end_time - start_time
@@ -54,25 +64,43 @@ class ExtendedKalmanFilter:
 		return self.mu, self.Sigma
 
 	def update(self, z, dt):
-        start_time = time.time()
+		start_time = time.time()
 
         # === TODO: Implement the EKF correction step ===
 
         # 1. Compute the Jacobian of the observation model H_t
 
+
+		H_t    = self.H(self.mu) 	#Matriz identidad 
+
+
+
         # 2. Innovation covariance
+		S = H_t @ self.Sigma @ H_t.T + self.Q
+
     
         # 3. Kalman gain
+		K = self.Sigma @ H_t.T @ np.linalg.inv(S)
+
+		print(len(K), len(H_t), len(S))
+
+		z_vec = z.reshape(-1)  
+		h_vec = self.h(self.mu).reshape(-1)     # fuerza (7,)
 
         # 4. Innovation (difference between actual and expected measurement)
+		y = z_vec - h_vec
 
         # 5. Update the state estimate
+		self.mu = (self.mu + K @ y)
+		print("mu after updateada: ", self.mu)
 
         # 6. Update the covariance
-        I = np.eye(len(self.mu))
+		I = np.eye(len(self.mu))
+		self.Sigma = (I - K @ H_t) @ self.Sigma
+
 
         # ================================================
 
-        end_time = time.time()
-        self.exec_times_upd.append(end_time - start_time)
-        return self.mu, self.Sigma
+		end_time = time.time()
+		self.exec_times_upd.append(end_time - start_time)
+		return self.mu, self.Sigma
