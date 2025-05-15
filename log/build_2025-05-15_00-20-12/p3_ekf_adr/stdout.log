@@ -1,0 +1,94 @@
+running egg_info
+creating build/p3_ekf_adr/p3_ekf_adr.egg-info
+writing build/p3_ekf_adr/p3_ekf_adr.egg-info/PKG-INFO
+writing dependency_links to build/p3_ekf_adr/p3_ekf_adr.egg-info/dependency_links.txt
+writing entry points to build/p3_ekf_adr/p3_ekf_adr.egg-info/entry_points.txt
+writing requirements to build/p3_ekf_adr/p3_ekf_adr.egg-info/requires.txt
+writing top-level names to build/p3_ekf_adr/p3_ekf_adr.egg-info/top_level.txt
+writing manifest file 'build/p3_ekf_adr/p3_ekf_adr.egg-info/SOURCES.txt'
+reading manifest file 'build/p3_ekf_adr/p3_ekf_adr.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/p3_ekf_adr/p3_ekf_adr.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr
+copying p3_ekf_adr/kf_node.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr
+copying p3_ekf_adr/ekf_7d_state_estimation.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr
+copying p3_ekf_adr/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr
+copying p3_ekf_adr/ekf_3d_state_estimation.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr
+copying p3_ekf_adr/ekf_8d_state_estimation.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils
+copying p3_ekf_adr/common_utils/visualization.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils
+copying p3_ekf_adr/common_utils/helper_utils.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils
+copying p3_ekf_adr/common_utils/sensor_utils.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils
+copying p3_ekf_adr/common_utils/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models
+copying p3_ekf_adr/motion_models/velocity_motion_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models
+copying p3_ekf_adr/motion_models/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models
+copying p3_ekf_adr/motion_models/acceleration_motion_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models
+copying p3_ekf_adr/motion_models/odometry_motion_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models
+copying p3_ekf_adr/observation_models/odometry_observation_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models
+copying p3_ekf_adr/observation_models/odometry_imu_observation_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models
+copying p3_ekf_adr/observation_models/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/filters
+copying p3_ekf_adr/filters/ekf.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/filters
+copying p3_ekf_adr/filters/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/filters
+running install
+running install_lib
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/kf_node.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils/visualization.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils/helper_utils.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils/sensor_utils.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/common_utils/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models/velocity_motion_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models/acceleration_motion_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/motion_models/odometry_motion_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/ekf_7d_state_estimation.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models/odometry_observation_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models/odometry_imu_observation_models.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/observation_models/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/ekf_3d_state_estimation.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/ekf_8d_state_estimation.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/filters
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/filters/ekf.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/filters
+copying /home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/build/lib/p3_ekf_adr/filters/__init__.py -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/filters
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/kf_node.py to kf_node.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils/visualization.py to visualization.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils/helper_utils.py to helper_utils.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils/sensor_utils.py to sensor_utils.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/common_utils/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models/velocity_motion_models.py to velocity_motion_models.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models/acceleration_motion_models.py to acceleration_motion_models.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/motion_models/odometry_motion_models.py to odometry_motion_models.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/ekf_7d_state_estimation.py to ekf_7d_state_estimation.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models/odometry_observation_models.py to odometry_observation_models.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models/odometry_imu_observation_models.py to odometry_imu_observation_models.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/observation_models/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/ekf_3d_state_estimation.py to ekf_3d_state_estimation.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/ekf_8d_state_estimation.py to ekf_8d_state_estimation.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/filters/ekf.py to ekf.cpython-310.pyc
+byte-compiling /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr/filters/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/share/ament_index
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/share/ament_index/resource_index
+creating /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/share/ament_index/resource_index/packages
+copying resource/p3_ekf_adr -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/share/p3_ekf_adr
+running install_egg_info
+Copying build/p3_ekf_adr/p3_ekf_adr.egg-info to /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/python3.10/site-packages/p3_ekf_adr-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ekf_estimation_3d script to /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/p3_ekf_adr
+Installing ekf_estimation_7d script to /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/p3_ekf_adr
+Installing ekf_estimation_8d script to /home/student/AdR/src/p3_ws/p3_ekf_adr/install/p3_ekf_adr/lib/p3_ekf_adr
+writing list of installed files to '/home/student/AdR/src/p3_ws/p3_ekf_adr/build/p3_ekf_adr/install.log'

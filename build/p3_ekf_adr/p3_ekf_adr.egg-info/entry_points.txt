@@ -1,0 +1,5 @@
+[console_scripts]
+ekf_estimation_3d = p3_ekf_adr.ekf_3d_state_estimation:main
+ekf_estimation_7d = p3_ekf_adr.ekf_7d_state_estimation:main
+ekf_estimation_8d = p3_ekf_adr.ekf_8d_state_estimation:main
+
